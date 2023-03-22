@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 10px;
+            height: 10px;
+        }
+			/*In this part we will make the round shape
+		of the face,and the basic structure of face
+			like add some color of face,height,width etc*/
+			.face {
+				position: relative;
+				width: 130px;
+				height: 130px;
+				border-radius: 50%;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.face::before {
+				/*In this part we will make
+			the mouth of the face*/
+				content: "";
+				position: absolute;
+				top: 80px;
+				width: 90px;
+				height: 40px;
+				background: yellow;
+				border-bottom-left-radius: 80px;
+				border-bottom-right-radius: 80px;
+				transition: 0.5s;
+			}
+			.face:hover::before {
+				/*Here we will add the hover effects.
+			Like when the cursor will came on the mouth the
+			mouth will closed that means is radius
+			will be decreased*/
+				top: 90px;
+				width: 90px;
+				height: 10px;
+				background: yellow;
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
+			}
+			/*In this part we will make
+		the eyes of the face*/
+			.eyes {
+				position: relative;
+				top: -20px;
+				display: flex;
+			}
+			.eyes .eye {
+				position: relative;
+				width: 40px;
+				height: 40px;
+				display: block;
+				background: #fff;
+				margin: 0 15px;
+				border-radius: 50%;
+			}
+			.eyes .eye::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				transform: translate(-50%, -50%);
+				width: 40px;
+				height: 40px;
+				background: #000;
+				border-radius: 50%;
+			}
+    </style>
+</head>
+<body style="background-color: peachpuff;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ORSU CYBER CRAFTS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="orsuboot.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Contact Us Section -->
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  height: 100%;
+  width: 100%;
+  background-repeat: unset;
+  font-size: 50px;"> 
+  <div class="face">
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+  </div>
+  </div>
+<section>
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Random Information</h2>
+			<p>Lorem ipsum dolor sit amet,  </p>
+            <p>1234 Random Street, Suite 567</p>
+            <p>City, State 12345</p>
+            <p>Country</p>
+            <h5>Email Us</h5>
+            <p>Email: info@company.com</p>
+            <h5>Call Us</h5>
+            <p>Phone: +1 (123) 456-7890</p>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/github.png"/></a>
+
+        </div>
+		<div class="col-sm-6">
+			<h2>Contact Us</h2>
+			<form action="/action_page.php">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea class="form-control" id="message" placeholder="Enter message" name="message"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+</section>
+        <!-- Footer -->
+        <footer class="footer" style="text-align: center;">
+            <div class="container">
+                <span class="text-muted">Copyright © 2023 Freelancing Website</span>
+            </div>
+        </footer>
+        <!-- Bootstrap JS -->
+        <script>
+          document.querySelector("body").addEventListener("mousemove", eyeball);
+          function eyeball() {
+            var eye = document.querySelectorAll(".eye");
+            eye.forEach(function (eye) {
+              let x =
+        eye.getBoundingClientRect().left + eye.clientWidth / 2;
+              let y =
+        eye.getBoundingClientRect().top + eye.clientHeight / 2;
+              let radian =
+            Math.atan2(event.pageX - x, event.pageY - y);
+              let rot =
+          radian * (180 / Math.PI) * -1 + 270;
+              eye.style.transform =
+              "rotate(" + rot + "deg)";
+            });
+          }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    </html> 
